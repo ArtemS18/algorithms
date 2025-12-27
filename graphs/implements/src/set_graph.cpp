@@ -46,7 +46,7 @@ std::vector<int> SetGraph::GetPrevVertices(int vertex) const {
     for (int from = 0; from < binTrees.size(); ++from)
     {
         if (binTrees[from].count(vertex) != 0)
-            prevVertices.push_back(vertex);
+            prevVertices.push_back(from);
     }
     return prevVertices;
 
