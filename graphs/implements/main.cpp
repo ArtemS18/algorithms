@@ -123,7 +123,7 @@ int main(int argc, const char * argv[]) {
     SetGraph setGraph(matrixGraph);
     ArcGraph arcGraph(setGraph);
 
-    IGraph* graphList[] {&listGraph, &matrixGraph, &setGraph};
+    IGraph* graphList[] {&listGraph, &matrixGraph, &setGraph, &arcGraph};
 
     for (auto p_grah: graphList){
         std::cout << typeid(*p_grah).name()<<std::endl;
@@ -139,8 +139,6 @@ int main(int argc, const char * argv[]) {
         }
         std::cout << std::endl;
     }
-    
-    
     
     // Нужно продемонстрировать работу конструктора копирования, проинициализировав
     // графы разных классов друг от друга. Далее, показать, что вершины и ребра
